@@ -168,11 +168,11 @@ exports.do = async () => {
     })
     if (!user.length) {
       await User.create({
-        fullName:"Admin",
+        nickname:"Admin",
         email:"Admin@gmail.com",
         password,
-        securityString,
-        emailVerificated:true,
+        // securityString,
+        email_Verified:true,
         adminVerificated:true,
         billing_address:"",
         shipping_address:"",
